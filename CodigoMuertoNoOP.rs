@@ -6,7 +6,7 @@ fn step_00(value: u64) -> u64 {
 	let value = value.rotate_left(1);
 	value ^ 0x1111_1111_1111_1111
 }
-
+ 
 #[inline(never)]
 fn step_01(value: u64) -> u64 {
 	let value = value.wrapping_add(0x0002);
